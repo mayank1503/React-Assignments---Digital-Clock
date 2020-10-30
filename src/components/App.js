@@ -12,13 +12,13 @@ class App extends Component {
     }
     componentDidMount(){
      this.setState(
-        { time: (new Date).toLocaleTimeString(),interval:setInterval(() => {
+        { time: new Date().toLocaleTimeString(),interval:setInterval(() => {
             
         this.handleTime();}, 1000)}
      )
     }
     handleTime(){
-    this.setState({ time: (new Date).toLocaleTimeString() })
+    this.setState({ time: new Date().toLocaleTimeString() })
     }
     componentWillUnmount(){
       clearInterval(this.state.interval);
