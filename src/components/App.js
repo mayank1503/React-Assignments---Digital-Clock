@@ -27,7 +27,7 @@ class App extends Component {
 
         return(
             <>
-               <div>h3 id="time"{this.state.time}</div>
+               <div> <h3 id>="time"{this.state.time}</h3></div>
             </>
         )
     }
