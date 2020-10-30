@@ -14,7 +14,7 @@ class App extends Component {
      this.setState(
         { time: (new Date).toLocaleTimeString(),interval:setInterval(() => {
             
-        this.handleTime}, 1000)}
+        this.handleTime();}, 1000)}
      )
     }
     handleTime(){
